@@ -11,9 +11,9 @@ window.addEventListener('load', () => gameStart());
 function gameStart() {
   const size = getLandsacapeDimensions(700, 350);
   const game = new Game(size.width, size.height, AUTO);
-  game.state.add('Boot', BootState);
-  game.state.add('Preload', PreloadState);
-  game.state.add('Game', GameState);
+  game.state.add('Boot', new BootState());
+  game.state.add('Preload', new PreloadState());
+  game.state.add('Game', new GameState());
   game.state.start('Boot');
   (<any>window).game = game;
 }

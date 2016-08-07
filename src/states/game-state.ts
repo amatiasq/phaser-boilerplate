@@ -4,7 +4,7 @@ import {
 } from 'phaser';
 
 
-export default new class extends State {
+export default class GameState extends State {
   private cursors: CursorKeys;
 
   init() {

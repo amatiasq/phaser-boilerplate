@@ -4,7 +4,7 @@ import {
 } from 'phaser';
 
 
-export default new class extends State {
+export default class PreloadState extends State {
 
   preload() {
     const world = this.game.world;
