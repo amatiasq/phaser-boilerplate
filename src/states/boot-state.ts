@@ -1,8 +1,6 @@
-import {
-  State,
-  ScaleManager,
-  Physics,
-} from 'phaser';
+import State = Phaser.State;
+import ScaleManager = Phaser.ScaleManager;
+import Physics = Phaser.Physics;
 
 
 export default class BootState extends State {
@@ -16,7 +14,7 @@ export default class BootState extends State {
   }
 
   preload() {
-    this.load.image('preloadBar', 'assets/images/preloader-bar.png');
+    this.load.image('bar', 'assets/images/preloader-bar.png');
   }
 
   create() {

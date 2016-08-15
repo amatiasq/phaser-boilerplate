@@ -1,7 +1,5 @@
-import {
-  State,
-  CursorKeys,
-} from 'phaser';
+import State = Phaser.State;
+import CursorKeys = Phaser.CursorKeys;
 
 
 export default class GameState extends State {
