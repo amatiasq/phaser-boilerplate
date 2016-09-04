@@ -1,6 +1,8 @@
-import State = Phaser.State;
-import ScaleManager = Phaser.ScaleManager;
-import Physics = Phaser.Physics;
+import {
+  State,
+  ScaleManager,
+  Physics,
+} from 'phaser';
 
 
 export default class BootState extends State {

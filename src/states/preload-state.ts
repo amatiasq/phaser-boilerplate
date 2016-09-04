@@ -1,5 +1,7 @@
-import State = Phaser.State;
-import Sprite = Phaser.Sprite;
+import {
+  State,
+  Sprite,
+} from 'phaser';
 
 
 export default class PreloadState extends State {

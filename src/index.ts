@@ -1,4 +1,3 @@
-/// <reference path="../node_modules/phaser/typescript/phaser.comments.d.ts" />
 import { Game, AUTO } from 'phaser';
 import BootState from './states/boot-state';
 import PreloadState from './states/preload-state';
@@ -8,14 +7,14 @@ import GameState from './states/game-state';
 window.addEventListener('load', () => gameStart());
 
 
-function gameStart() {
+function gameStart(): void {
   const size = getLandsacapeDimensions(700, 350);
   const game = new Game(size.width, size.height, AUTO);
   game.state.add('Boot', new BootState());
   game.state.add('Preload', new PreloadState());
   game.state.add('Game', new GameState());
   game.state.start('Boot');
-  (<any>window).game = game;
+  (window as any).game = game;
 }
 
 
